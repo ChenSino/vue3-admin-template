@@ -2,7 +2,7 @@ export default [
   {
     url: `/module/user/login`,
     method: "post",
-    response: (req) => {
+    response: (req: { body: { name: any; }; }) => {
       return {
         header: {
           code: 0,

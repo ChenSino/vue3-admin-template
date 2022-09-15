@@ -15,6 +15,7 @@ import path from "path";
 
 export default ({ command }: ConfigEnv): UserConfigExport => {
   return {
+    base:"./vue3-admin-template",
     plugins: [
       vue(),
       AutoImport({
